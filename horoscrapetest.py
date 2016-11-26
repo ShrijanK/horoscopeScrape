@@ -1,7 +1,7 @@
 import bs4
 import requests
 
-def whoreOscope():
+def whoreOscope(horoscope_number):
     res = requests.get("http://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=" + horoscope_number)
     soup = bs4.BeautifulSoup(res.text, 'html.parser')
     h1 = soup.find("div",{"class":"container"}).find("div",{"class":"main-container"})
