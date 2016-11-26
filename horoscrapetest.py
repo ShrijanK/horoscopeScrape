@@ -6,7 +6,7 @@ def whoreOscope():
     soup = bs4.BeautifulSoup(res.text, 'html.parser')
     h1 = soup.find("div",{"class":"container"}).find("div",{"class":"main-container"})
     print (h1)
-    """h2 = h1.find("div",{"class":"main-container"})
+    h2 = h1.find("div",{"class":"main-container"})
     h3 = h2.find("div",{"class":"row"})
     h4 = h3.find("div",{"class":"page-2col-col1"})
     h5 = h4.find("div",{"class":"col1-1col-col1"})
@@ -17,7 +17,7 @@ def whoreOscope():
     for horoscope in h8:
         horoscope_list.append(horoscope.txt)
 
-    print (horoscope_list)"""
+    print (horoscope_list)
   
 
 print ("1. for Aries")
